@@ -14,7 +14,7 @@
             "id": 1,
             "name": "Арматура гладкая 6 А240 ГОСТ 34028-2016",
             "img": "assets/products/armatura_gladkaya.webp",
-            "price": 70,
+            "price": 30,
             "length": 6000,
             "category": "armatura",
             "subCategory": "armatura_gladkaya",
@@ -200,7 +200,7 @@
           {
             "id": 11,
             "name": "Арматура рифленая 32 (2ф) А500С ГОСТ 34028-2016",
-            "price": 100,
+            "price": 180,
             "img": "assets/products/armatura.webp",
             "length": 6000,
             "category": "armatura",
