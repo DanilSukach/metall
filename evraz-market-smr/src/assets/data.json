@@ -63,7 +63,7 @@
           {
             "id": 6,
             "name": "Арматура гладкая 16 А240С ГОСТ 34028-2016",
-            "price": 60,
+            "price": 80,
             "img": "assets/products/armatura_gladkaya.webp",
             "length": 6000,
             "category": "armatura",
@@ -83,7 +83,7 @@
           {
             "id": 8,
             "name": "Арматура гладкая 20 А240С ГОСТ 34028-2016",
-            "price": 60,
+            "price": 150,
             "img": "assets/products/armatura_gladkaya.webp",
             "length": 6000,
             "category": "armatura",
@@ -100,7 +100,7 @@
           {
             "id": 1,
             "name": "Арматура рифленая 6 (2ф) А500С Ст3сп ГОСТ 34028-2016",
-            "price": 100,
+            "price": 36,
             "img": "assets/products/armatura.webp",
             "length": 6000,
             "category": "armatura",
@@ -110,7 +110,7 @@
           {
             "id": 2,
             "name": "Арматура рифленая 8 (2ф) А500С ГОСТ 34028-2016",
-            "price": 100,
+            "price": 46,
             "img": "assets/products/armatura.webp",
             "length": 6000,
             "category": "armatura",
@@ -120,7 +120,7 @@
           {
             "id": 3,
             "name": "Арматура рифленая 10 (2ф) А500С ГОСТ 34028-2016",
-            "price": 100,
+            "price": 53,
             "img": "assets/products/armatura.webp",
             "length": 6000,
             "category": "armatura",
@@ -130,7 +130,7 @@
           {
             "id": 4,
             "name": "Арматура рифленая 12 (2ф) А500С ГОСТ 34028-2016",
-            "price": 100,
+            "price": 65,
             "img": "assets/products/armatura.webp",
             "length": 6000,
             "category": "armatura",
