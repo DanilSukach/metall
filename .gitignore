@@ -1,0 +1,14 @@
+.env
+.env.local
+.env.*.local
+
+node_modules/
+dist/
+.angular/
+
+nginx/certbot/
+
+.vscode/
+.idea/
+*.log
+.DS_Store

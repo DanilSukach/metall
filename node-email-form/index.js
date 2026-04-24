@@ -4,30 +4,27 @@ const cors = require('cors');
 const nodemailer = require('nodemailer');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(cors({ origin: '*' }));
 
-app.post('/send-email', (req, res) => {
-  const name = req.body.name;
-  const email = req.body.email;
-  const number = req.body.number;
-  const message = req.body.message;
+const transporter = nodemailer.createTransport({
+  host: process.env.SMTP_HOST,
+  port: Number(process.env.SMTP_PORT) || 465,
+  secure: true,
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS
+  }
+});
 
-  const transporter = nodemailer.createTransport({
-     host: 'smtp.mail.ru',
-    port: 465,
-    secure: true,
-    auth: {
-        user: 'merkuri_metal_info@mail.ru',
-        pass: 'MNHQrQnie0wMfk3fak0u'
-    }
-  });
+app.post('/send-email', (req, res) => {
+  const { name, email, number, message } = req.body;
 
   const mailOptions = {
-    from: 'Mail from <merkuri_metal_info@mail.ru>',
-    to: 'mercuriy63@bk.ru', // Replace with recipient email address
+    from: process.env.MAIL_FROM,
+    to: process.env.MAIL_TO,
     subject: 'New Contact Form Submission',
     text: `
       Клиент: ${name} Оставил заявку
@@ -47,7 +44,6 @@ app.post('/send-email', (req, res) => {
     }
   });
 });
-
 
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
